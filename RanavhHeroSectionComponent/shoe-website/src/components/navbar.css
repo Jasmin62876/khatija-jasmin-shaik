@@ -1,0 +1,81 @@
+/* Navbar.css */
+
+/* Base Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(223, 223, 212, 0.9);
+  position: relative;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+}
+
+.nav-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: rgb(80, 79, 79);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: black;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 20px;
+    width: 20%;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  .nav-links.open {
+    max-height: 500px; /* Set to a height that can contain all the links */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links a {
+    font-size: 1.1rem;
+  }
+
+  .hamburger .bar {
+    width: 20px;
+  }
+}
