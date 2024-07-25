@@ -1,1 +1,3 @@
 This file contains contributors list
+Full Name	           ||      Category	     ||               Deployed Link                   ||       Date	     ||   Tech Stack Used
+Avneesh Jarangal	        Hero Section	          https://travelwithus4u.netlify.app/   	        21-07-2024	       HTML, CSS, JS
