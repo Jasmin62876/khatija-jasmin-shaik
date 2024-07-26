@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Documents",
+			"path": "../OneDrive/Pictures/Documents"
+		},
+		{
+			"name": "index.html1",
+			"path": "../OneDrive/Pictures/Documents/index.html1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Documents"
+	}
+}
